@@ -3,4 +3,11 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - controller.yaml
+patches:
+- path: controller_patch.json
+  target:
+    group: apiextensions.k8s.io
+    version: v1
+    kind: CustomResourceDefinition
+    name: sealedsecrets.bitnami.com
 namespace: sealed-secrets
