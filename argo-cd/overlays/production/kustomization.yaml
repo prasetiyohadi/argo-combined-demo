@@ -5,4 +5,5 @@ resources:
 - ingress.yaml
 patchesStrategicMerge:
 - server.yaml
+- configmap.yaml
 namespace: argocd
