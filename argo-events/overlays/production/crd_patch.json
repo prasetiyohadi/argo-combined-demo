@@ -1,0 +1,17 @@
+[
+  {
+    "op": "add",
+    "path": "/spec/versions/0/schema",
+    "value": {
+      "openAPIV3Schema": {
+        "properties": {
+          "spec": {
+            "type": "object",
+            "x-kubernetes-preserve-unknown-fields": true
+          }
+        },
+        "type": "object"
+      }
+    }
+  }
+]
